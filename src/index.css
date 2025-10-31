@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fcff;
+  color: #333;
+  padding: 40px;
+}
+
+h1 {
+  color: #006699;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #006699;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d66;
+}
+
+hr {
+  margin: 20px 0;
+}

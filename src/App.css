@@ -1,0 +1,130 @@
+/* 🌊 FISHERIES THEME: Blue + White with Fish Decorations */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e6f7ff 0%, #b3e0ff 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #00334d;
+}
+
+.App {
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🌊 Floating Fish Decorations */
+.App::before,
+.App::after {
+  content: "🐟";
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: swim 12s linear infinite;
+}
+
+.App::before {
+  top: 20%;
+  left: -5%;
+}
+
+.App::after {
+  bottom: 15%;
+  right: -5%;
+  animation-delay: 6s;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 🧭 Main Header */
+h1 {
+  color: #005580;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #cceeff;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #004466;
+  margin-bottom: 20px;
+}
+
+/* 🌊 Divider */
+hr {
+  width: 60%;
+  border: 1px solid #80d4ff;
+  margin: 25px auto;
+}
+
+/* 🔍 Search and Upload Sections */
+input[type="text"],
+input[type="file"] {
+  padding: 10px;
+  border: 2px solid #66ccff;
+  border-radius: 8px;
+  margin: 5px;
+  width: 260px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: #0099cc;
+}
+
+/* 🎣 Buttons */
+button {
+  background-color: #0077b3;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005580;
+  transform: scale(1.05);
+}
+
+/* 📚 Thesis List */
+h2 {
+  color: #00334d;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #66ccff;
+  margin: 10px auto;
+  padding: 12px;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background: #e6faff;
+}
